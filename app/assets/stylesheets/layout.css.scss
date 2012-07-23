@@ -1,0 +1,137 @@
+/* Arguments for CSS SASS */
+
+ $black: #000000;
+ $text-color: #929292;
+ $main-color: #313030;
+ $text-color-white: #FFFFFF;
+
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+
+ body { background: $main-color; }
+
+ #header {  background-color: $black; height: 130px; width: 100%; }
+
+ #header .logo {
+ 	background-image: url("/assets/logo.png");
+ 	background-repeat: no-repeat;
+ 	height: 86px;
+ 	width: 200px;
+ 	margin: 18px;
+  margin-right: 100px;
+ 	float: left;
+ }
+
+#menu ul {
+  list-style-type: none;
+  padding-top: 38px;
+  padding-left: 40px;
+  
+  li {
+    float: left;
+ 	  
+    a {
+        background-image: url("/assets/menu-sep.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        
+        padding-right: 32px;
+        padding-left: 32px;
+        display: block;
+        line-height: 49px;
+        line-width: 3px;
+        text-decoration: none;
+        color: $text-color;
+ 	      font-size: 18px;
+    }
+    & a:hover {
+      color: $text-color-white;
+    }
+  }
+}
+
+.last-menu-sep {
+  background-image: url("/assets/menu-sep.png");
+        background-repeat: no-repeat;
+  height: 49px;
+  width: 3px;
+  float: left;
+  /*border: solid 1px red;*/
+}
+
+.left-line {
+  float: left;
+  width: 360px;
+  height: 24px;
+  border-top: solid 1px #242424;
+  background-color: $black;
+  margin-top: 210px;
+}
+
+.right-line {
+  float: left;
+  width: 386px;
+  height: 24px;
+  border-top: solid 1px #242424;
+  background-color: $black;
+  margin-top: 210px;
+}
+
+ .main-content {
+ 	background-color: $black;
+ 	color: $text-color-white;
+ 	float: left;
+ 	width: 530px;
+ 	height: 295px;
+ 	padding: 0px;
+ 	margin-top: 80px;
+ }
+
+ /*#images {
+  background-color: #852A2C;
+  padding: 20px 100px;
+  font-weight: normal;
+  font-style: italic;
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A03133), to(#722324));
+  background: -moz-linear-gradient(top,  #A03133, #722324);
+  -moz-box-shadow: 0 2px 8px 2px #000;
+  -webkit-box-shadow: 0 2px 6px 2px #000;
+  margin-bottom: 30px;
+  p {
+    margin: 0;
+    padding-top: 32px;
+    font-size: 34px;
+    &.font-size-small {
+      padding-top: 10px;
+      font-size: 20px;
+      color: #EAA29F;
+    }
+  }
+}*/
+
+ #footer {
+ 	background-color: $black;
+ 	width: 100%;
+ 	height: 120px;
+ }
